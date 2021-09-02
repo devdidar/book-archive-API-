@@ -1,0 +1,46 @@
+.title,
+.show-title {
+    text-align: center;
+}
+
+.navbar {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.navbar input {
+    width: 400px;
+    padding: 8px 15px;
+}
+
+button {
+    padding: 10px 17px;
+    background-color: crimson;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#books-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.card {
+    height: 500px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 40px 10px rgb(199, 199, 199);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.image img {
+    height: 280px;
+}
