@@ -5,18 +5,15 @@ const loadBooks = () => {
         fetch(`https://openlibrary.org/search.json?q=${inputText}`)
             .then(res => res.json())
             .then(data => displayBooks(data.docs))
-        console.log(inputText);
         searchInput.value = '';
     }
     // display books
 const displayBooks = books => {
-    console.log(books.length);
     const booksContainer = document.getElementById('books-list');
     const countResult = document.getElementById('count-result');
     countResult.innerText = books.length
     booksContainer.innerHTML = '';
     books.forEach((book, index) => {
-        console.log(book);
         const { title, cover_i, first_publish_year, author_name, publisher } = book;
         const imgUrl = `https://covers.openlibrary.org/b/id/${cover_i}-M.jpg`
         const div = document.createElement('div');
